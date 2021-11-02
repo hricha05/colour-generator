@@ -1,0 +1,21 @@
+li:last-of-type {
+	padding-left: 1.5rem;
+	border-left: 1px solid black;
+}
+
+a {
+	margin-right: 2rem;
+	text-decoration: none;
+}
+
+.nav-bar {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.nav-link {
+	display: flex;
+	padding: 0;
+	list-style-type: none;
+}
