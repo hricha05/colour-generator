@@ -6,8 +6,7 @@ document
 	.addEventListener('click', textFormatGenerator);
 document.getElementById('hex').addEventListener('click', hexFormatGenerator);
 const colorText = document.getElementById('color');
-colorText.style.color = hexFormatGenerator();
-colorText.innerHTML = hexFormatGenerator();
+colorText.style.color = colorText.innerHTML = hexFormatGenerator();
 
 function clickMe() {
 	console.log('click');
