@@ -43,6 +43,7 @@ li:last-of-type {
 a {
 	margin-right: 2rem;
 	text-decoration: none;
+	cursor: pointer;
 }
 
 main {
@@ -104,7 +105,7 @@ h1 {
 	font-size: 1rem;
 	width: 15vw;
 	padding: 0.85rem;
-	border-radius : 0.25rem;
+	border-radius: 0.25rem;
 	border-style: none;
 	cursor: pointer;
 }
