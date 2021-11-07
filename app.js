@@ -1,33 +1,24 @@
-document
-	.getElementById('click-me')
-	.addEventListener('click', hexFormatGenerator);
-document
-	.getElementById('simple')
-	.addEventListener('click', textFormatGenerator);
-document.getElementById('hex').addEventListener('click', hexFormatGenerator);
+const background = document.getElementById('background');
 const colorText = document.getElementById('color');
-colorText.style.color = colorText.innerHTML = hexFormatGenerator();
+const hexBtn = document.getElementById('hex');
+const textBtn = document.getElementById('text');
+
+document.getElementById('click-me').addEventListener('click', clickMe);
+document.getElementById('hex').addEventListener('click', clickMe);
 
 function clickMe() {
-	console.log('click');
+	// let a = colorText;
+	return (
+		// colorText.style.color = colorText.innerHTML = hexFormatGenerator()
+		(background.style.backgroundColor = colorGenerator())
+	);
 }
 
-function hexFormatGenerator() {
+function colorGenerator() {
 	const hex = '0123456789ABCDEF'.split('');
 	let color = '#';
 	for (var i = 0; i < 6; i++) {
 		color += hex[Math.floor(Math.random() * 16)];
 	}
-	// console.log(color);
 	return color;
-	// return (colorText.innerHTML = color);
-}
-
-function textFormatGenerator() {
-	console.log('simple text');
-}
-
-function myColor() {
-	const el = document.getElementById('color');
-	el.ontoggle;
 }
