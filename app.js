@@ -8,10 +8,10 @@ document.getElementById('hex').addEventListener('click', clickMe);
 
 function clickMe() {
 	// let a = colorText;
-	return (
-		// colorText.style.color = colorText.innerHTML = hexFormatGenerator()
-		(background.style.backgroundColor = colorGenerator())
-	);
+	return (background.style.backgroundColor =
+		colorText.innerHTML =
+		colorText.style.color =
+			colorGenerator());
 }
 
 function colorGenerator() {
