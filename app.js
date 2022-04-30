@@ -7,7 +7,6 @@ document.getElementById('click-me').addEventListener('click', clickMe);
 document.getElementById('hex').addEventListener('click', clickMe);
 
 function clickMe() {
-	// let a = colorText;
 	return (background.style.backgroundColor =
 		colorText.innerHTML =
 		colorText.style.color =
